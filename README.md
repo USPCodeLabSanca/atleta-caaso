@@ -2,21 +2,20 @@
 <!-- Ao longo do documento, algumas partes estarão comentadas e podem ser utilizadas opcionalmente. -->
 
 <!-- Se o projeto tiver uma logo, pode ser interessante colocá-la aqui. -->
-# Nome do Projeto
+# Atleta-Caaso
 
 <!-- Descreva brevemente o objetivo do projeto, será a primeira parte lida ao entrar no repositório. -->
 <!-- Links essenciais (como onde o projeto está sendo hospedado se for web) podem ficar aqui também. -->
 ## 🧪 Sobre o Projeto
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel ullamcorper nisi. Pellentesque luctus laoreet blandit. Fusce massa est, fermentum sit amet aliquet ut, viverra ut neque. Suspendisse in justo et nunc lacinia vehicula. Aliquam condimentum eros sit amet nulla auctor, non vestibulum dui volutpat. Donec vestibulum placerat consectetur. Quisque imperdiet faucibus lacus, ut fringilla neque bibendum vitae.
+Foco em desenvolver um aplicativo cujo intuito seria facilitar a contagem de presenças dentro dos esportes (por enquanto) da atlética CAASO da faculdade USP-São Carlos...
 
 <!-- Essa seção pode ser usada para detalhar de forma mais técnica os processos empregados no projeto. -->
 ## ⚙️ Tecnologias Utilizadas
-Lorem ipsum dolor sit amet, consectetur adipiscing elit: 
-- Pellentesque
-- Vel
-- Ullamcorper
+Linguagens desenvolvidas: 
+- Node.js
+- ReactNative
 
-Pellentesque luctus laoreet blandit. Fusce massa est, fermentum sit amet aliquet ut, viverra ut neque. Suspendisse in justo et nunc lacinia vehicula. Aliquam condimentum eros sit amet nulla auctor, non vestibulum dui volutpat. Donec vestibulum placerat consectetur. Quisque imperdiet faucibus lacus, ut fringilla neque bibendum vitae.
+O projeto também inclui a aprendizagem nas linguagens pelos alunos que estão participando do projeto.
 
 <!-- Descreva em detalhes como fazer o projeto rodar localmente, incluindo as depedências que devem ser instaladas. -->
 <!-- É interessante utilizar blocos de código nessa seção para mostrar os comandos que devem ser executados. -->
