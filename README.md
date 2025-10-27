@@ -13,7 +13,8 @@ Foco em desenvolver um aplicativo cujo intuito seria facilitar a contagem de pre
 ## ⚙️ Tecnologias Utilizadas
 Linguagens desenvolvidas: 
 - Node.js
-- ReactNative
+- ReactNative + Expo
+- Typescript
 
 O projeto também inclui a aprendizagem nas linguagens pelos alunos que estão participando do projeto.
 
