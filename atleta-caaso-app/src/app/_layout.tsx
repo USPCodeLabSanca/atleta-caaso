@@ -1,7 +1,25 @@
-import { Stack } from 'expo-router';
+import { SplashScreen, Stack } from 'expo-router';
 import { AuthProvider } from '@/components/AuthContext'; // (Ou '../components/AuthContext' se @/ não funcionar)
+import { useFonts, Jaro_400Regular } from '@expo-google-fonts/jaro';
+import { useEffect } from 'react';
+
+SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() { 
+    const [fontsLoaded, fontError] = useFonts({
+    'Jaro-Regular': Jaro_400Regular,
+});
+
+useEffect(() => {
+    if (fontsLoaded || fontError) {
+        SplashScreen.hideAsync();
+    }
+}, [fontsLoaded, fontError]);
+
+if (!fontError && !fontsLoaded) {
+    return null;
+}
+
     return (
         
         <AuthProvider>
