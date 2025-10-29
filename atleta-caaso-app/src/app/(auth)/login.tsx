@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, ImageBackground, Image } from 'react-native'
 import FloatButton from '@/components/ButtonAuth'
+import pigIcon from '@/assets/images/Pig.png'
 
 export default function Login() {
     return (
@@ -17,20 +18,40 @@ export default function Login() {
                 />
             </View>
 
-            <View
-                style={style.pos_circulo}
-            >
+            <View>
+                <View>
+                    <Text>
+                        Imput de ID
+                    </Text>
+                    
+                </View>
+
+                
                 <View
-                style={style.circulo}
+                style={style.circle}
                 >
 
-                    <FloatButton
-                    text="Login"
-                    backgroundColor="#F0D400"
-                    textColor="white"
+                    <View 
+                        style={style.LoginItens}    
                     >
 
-                    </FloatButton>
+
+                        <FloatButton
+                        text="Login"
+                        backgroundColor="#ffe32eff"
+                        textColor="white"
+                        backgroundIconSource={pigIcon}
+                        >
+
+                        </FloatButton>
+
+                        <Text>
+
+                        </Text>
+
+    
+
+                    </View>
 
                 </View>
 
@@ -52,23 +73,31 @@ const style = StyleSheet.create({
         color: 'white',
     },
 
-    circulo: {
+    circle: {
         width: 2000,
         height: 2000,
         borderRadius: 5000,
         paddingTop: 300,
         backgroundColor: '#FFCA29',
         opacity: 0.81,
+        alignItems: 'center',
+        left: 100,
     },
 
-    pos_circulo: {
+    pos_circle: {
         paddingLeft: 300,
     },
 
     Logo: {
         paddingTop: 80,
         paddingBottom: 60,
-    }
+    },
+
+    LoginItens: {
+        right: 100,
+        paddingTop: 10,
+    },
+
 });
 
-// tela de login, bem chucra, apenas criada e laceada com a verificacao 
+// tela de login feita, falta adicionar campo para insercao de dados
