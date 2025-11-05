@@ -1,7 +1,7 @@
+import { Jaro_400Regular, useFonts } from '@expo-google-fonts/jaro';
 import { SplashScreen, Stack } from 'expo-router';
-import { AuthProvider } from '@/components/AuthContext'; // (Ou '../components/AuthContext' se @/ não funcionar)
-import { useFonts, Jaro_400Regular } from '@expo-google-fonts/jaro';
 import { useEffect } from 'react';
+import { AuthProvider } from '../../components/AuthContext';
 
 SplashScreen.preventAutoHideAsync();
 

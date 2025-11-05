@@ -1,7 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Pressable, GestureResponderEvent, TouchableOpacity, Text, ImageSourcePropType, Image} from 'react-native'
-import { useFonts } from 'expo-font';
-import { Jaro_400Regular } from '@expo-google-fonts/jaro';
+import { GestureResponderEvent, Image, ImageSourcePropType, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 type ButtonProps = {
     text: string;
@@ -15,7 +13,9 @@ type ButtonProps = {
 export default function FloatButton({
     onPress,
     backgroundColor,
+    textColor,
     backgroundIconSource,
+    text,
 }: ButtonProps) {
     return (
         <TouchableOpacity
@@ -31,9 +31,9 @@ export default function FloatButton({
                 />
 
                 <Text
-                    style={style.text}
+                    style={[style.text, {color: textColor}]}
                 >
-                    Login
+                    {text}
 
                 </Text>
                 
@@ -67,17 +67,18 @@ const style = StyleSheet.create({
     },
 
     text: {
-        fontSize: 30,
+        fontSize: 24,
         fontFamily: 'Jaro-Regular',
         fontWeight: 'bold',
-        color: 'white',
         textAlign: 'center',
         
     },
 
     backgroundIcon: {
         position: 'absolute',
-        top: '-25%',
-        left: '8%',
+        top: '-30%',
+        width: 40,
+        left: '30%',
+        opacity: 0.5,
     },
 })
